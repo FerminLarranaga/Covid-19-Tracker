@@ -1,0 +1,31 @@
+.table__container{
+    margin: 15px 0;
+    color: #6a5d5d;
+    overflow: hidden;
+}
+
+.table__selectQuery{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.table__countries{
+    overflow: scroll;
+    overflow-x: hidden;
+    padding-right: 6px;
+    height: 40vh;
+}
+
+.table__countries>tr {
+    height: 26px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.table__countries tr:nth-of-type(odd){
+    background-color: #f3f2f8;
+}

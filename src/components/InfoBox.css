@@ -1,0 +1,73 @@
+.infoBox {
+    flex: 1;
+    cursor: pointer;
+}
+
+.infoBox--active_true {
+    border-top: 10px solid;
+}
+
+.infoBox--red {
+    border-color: #e83333;
+}
+
+.infoBox--green {
+    border-color: #3ded34;
+}
+
+.infoBox--black {
+    border-color: #2d3038;
+}
+
+.infoBox:not(:last-child) {
+    margin-right: 15px;
+}
+
+.infoBox__newOnes, .infoBox__total, .infoBox__perMillion {
+    margin-bottom: 3px;
+}
+
+.infoBox__total {
+    font-size: 25px;
+    font-weight: 550;
+}
+
+.infoBox__total_red {
+    color: #e83333;
+}
+
+.infoBox__total_green {
+    color: #3ded34;
+}
+
+.infoBox__total_black {
+    color: #2d3038;
+}
+
+@media (min-width: 439px) and (max-width: 639px) {
+    .app__stats {
+        flex-wrap: wrap;
+    }
+    .infoBox {
+        min-width: 200px;
+        margin: 20px 0 0 0!important;
+    }
+
+    .infoBox:not(:last-child){
+        min-width: 190px;
+    }
+
+    .infoBox:nth-child(1){
+        margin: 20px 20px 0 0 !important;
+    }
+}
+
+@media (max-width: 439px) {
+    .app__stats {
+        flex-wrap: wrap;
+    }
+    .infoBox {
+        min-width: 200px;
+        margin: 20px 0 0 0 !important;
+    }
+}

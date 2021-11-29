@@ -1,0 +1,124 @@
+.app{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.app__left{
+  flex: 0.9;
+  display: flex;
+  flex-direction: column;
+}
+
+.app__title{
+  font-weight: 900;
+}
+
+.app__CovidTitle{
+  color: red;
+}
+
+.app__TrackerTitle{
+  text-decoration: underline;
+}
+
+.app__right{
+  flex: 0.4;
+  /* height: 93vh; */
+  margin-left: 20px;
+}
+
+.app__rightCard{
+  height: 100%;
+}
+
+.app__header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px; 
+}
+
+.app__dropdown{
+  background: white;
+  min-width: 150px !important;
+  border-radius: 15px;
+}
+
+.MuiSelect-nativeInput{
+  display: none;
+}
+
+.app__stats{
+  display: flex;
+  justify-content: space-between;
+}
+
+.MuiPaper-rounded{
+  border-radius: 15px !important;
+}
+
+.MuiOutlinedInput-root{
+  border-radius: 15px !important;
+}
+
+@media (max-width: 990px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .app__right{
+    margin-left: 0;
+  }
+}
+
+/* width */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  /* background: rgba(195, 178, 230, 0.3); */
+  background: transparent;
+  border-radius: 30px;
+}
+ 
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: rgba(102, 113, 216, 0.7);
+  border-radius: 30px;
+}
+
+/* Handle on hover */
+*::-webkit-scrollbar-thumb:hover {
+  background: rgba(43, 46, 68, 0.8); 
+}
+
+.watermark_container{
+  padding: 20px;
+  /* background: white; */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.watermark_txt{
+  background: -webkit-linear-gradient(right, #cebd46, #c500ff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
+  margin-bottom: 5px;
+  width: fit-content;
+}
+
+.watermark_container a{
+  text-decoration: none;
+  font-weight: 700;
+  transition: .5s all;
+
+}
+
+.watermark_container a:hover{
+  letter-spacing: 3px;
+  text-decoration: underline;
+}
