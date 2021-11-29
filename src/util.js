@@ -100,13 +100,13 @@ export const showDataOnMap = (data, casesType) => {
                         {country.country}
                     </div>
                     <div className='info-cases'>
-                        Cases: {numeral(country.cases).format('0,0')}
+                        Casos: {numeral(country.cases).format('0,0')}
                     </div>
                     <div className='info-recovered'>
-                        Recovered: {numeral(country.recovered).format('0,0')}
+                        Recuperados: {numeral(country.recovered).format('0,0')}
                     </div>
                     <div className='info-deaths'>
-                        Deaths: {numeral(country.deaths).format('0,0')}
+                        Muertes: {numeral(country.deaths).format('0,0')}
                     </div>
                 </div>
             </Popup>
